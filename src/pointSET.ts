@@ -1,3 +1,4 @@
+import p5 from "p5";
 import Point2D from "./doNotTouch/point2D";
 import RectHV from "./doNotTouch/rectHV";
 
@@ -36,11 +37,9 @@ class PointSET {
     return false;
   }
 
-  public draw(p): void {
+  public draw(p: p5): void {
     // draw all points to p5
     for (const point of this.points) {
-      p.stroke(0);
-      p.strokeWeight(5);
       point.draw(p);
     }
   }

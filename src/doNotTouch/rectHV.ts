@@ -1,3 +1,4 @@
+import p5 from "p5";
 import Point2D from "./point2D";
 
 class RectHV {
@@ -39,7 +40,7 @@ class RectHV {
         return this.xmax === that.xmax && this.ymax === that.ymax && this.xmin === that.xmin && this.ymin === that.ymin
     }
 
-    public draw(p): void {
+    public draw(p: p5): void {
         p.rect(this.xmin, this.ymin, this.xmax - this.xmin, this.ymax - this.ymin);
     }
 
